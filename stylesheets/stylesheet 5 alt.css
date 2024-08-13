@@ -1,0 +1,133 @@
+body{
+    /* background-color: rgb(34, 3, 13); */
+    background-image: linear-gradient(rgb(47, 13, 22), rgb(5, 11, 16));
+    color: rgb(243, 86, 71);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align: center;
+    text-shadow: 1px 1px rgb(231, 19, 0);
+}
+
+hr{
+    background-image: linear-gradient(to right, transparent, rgb(243, 19, 0), transparent);
+    border: 0px;
+    height: 2px;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.header button{
+    left: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.titlecontainer{
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.maincontainer{
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 23% 53% 23%;
+}
+
+
+/* CONTAINER 1 */
+.container1{
+    text-align: left;
+    background-color: rgba(63, 5, 29, 0.7);
+    height: 823px;
+    padding: 10px;
+    box-shadow:inset 0px 0px 0px 2px rgba(231, 19, 0, 0.308);
+}
+
+.container1:hover{
+    box-shadow: 0px 0px 0px 2px rgb(0, 158, 206),
+    3px 3px 5px rgb(3, 15, 46),
+    -3px -3px 5px rgba(2, 132, 184, 0.445);
+    color: rgb(92, 245, 253);
+    background-color: rgba(4, 8, 24, 0.1);
+}
+
+.container1:hover hr{
+    background-image: linear-gradient(to right, rgba(2, 87, 184, 0.5), rgb(92, 245, 253), rgba(2, 87, 184, 0.5));
+}
+
+.container1:hover div{
+    background-color: rgba(1, 4, 10, 0.4);
+}
+/*            */
+
+.container2{
+    background-color: rgb(41, 4, 16);
+    padding: 10px;
+}
+
+.columnTitle{
+    margin: 3px 3px 6px 6px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* BUTTON */
+button{
+    background-color: rgb(47, 13, 22);
+    color: rgb(243, 86, 71);
+    border: 1px solid rgb(243, 86, 71);
+    border-radius: 2px;
+    padding: 4px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover{
+    color: rgb(92, 245, 253);
+    background-color: rgb(20, 18, 27);
+    border-color: rgb(92, 245, 253);;
+}
+
+button:active{
+    background-color: black;
+    box-shadow: 0px 0px 5px 2px rgba(54, 198, 255, 0.5);
+}
+/*        */
+
+#titulo{
+    color: rgb(252, 255, 54);
+    text-shadow: 0px 2px rgb(0, 158, 206),
+                 0 0 5px rgb(252, 255, 54),
+                 0 0 10px rgba(252, 255, 54, 0.7),
+                 0 0 20px rgba(252, 255, 54, 0.5);
+    animation: blink 3s infinite linear alternate;
+}
+
+@keyframes blink{
+    29%{
+        opacity: 1;
+    }
+    30%, 37%, 45%{
+        opacity: 0.2;
+    }
+    32%, 38%, 47%{
+        opacity: 1;
+    }
+    60%, 70%, 79%{
+        opacity: 1;
+    }
+    65%, 67%, 76%, 78%{
+        opacity: 0.2;
+    } 
+    66%, 69%, 77%{
+        opacity: 0.8;
+    }
+}

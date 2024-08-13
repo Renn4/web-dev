@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Layout practice</title>
+
+    <style>
+
+        img.uno{
+            content: url("https://frutiger-aero.org/img/frutiger-aero-6.webp");
+        }
+        
+        img.dos{
+            content: url("https://upload.wikimedia.org/wikipedia/commons/1/12/Frutiger_aero-style_wallpaper.png");
+        }
+
+        img.tres{
+            content: url("https://i.ytimg.com/vi/5SMiXLjW0g8/hq720.jpg?sqp=-oaymwExCK4FEIIDSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYEyBOKH8wDw==&rs=AOn4CLCEPrr_Bd_GrY1dbExQBZL16fN8Kw");
+            scale: 2;
+        }
+
+        img.cuatro{
+            content: url("https://frutiger-aero.org/img/DORFic-2.webp");
+        }
+
+        img.cinco{
+            content: url("https://i.redd.it/i-recreated-one-of-the-ai-generated-frutiger-aero-v0-ygcplvnmdz7a1.png?width=1920&format=png&auto=webp&s=479cc1c466ff9cac8f25310a94c06b120d98dfa2");
+        }
+
+        img.seis{
+            content: url("https://i.pinimg.com/originals/dd/d6/0b/ddd60b6e993b7212ac3ac76fe6826c07.jpg");
+            scale: 2;
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            margin: auto;
+            gap: 10px;
+            justify-content: center;
+        }
+        .container div{
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+        }
+        .container2 div{
+            display: flex;
+            justify-content: center;
+        }
+        .container2{
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px 300px;
+            gap: 10px;
+            justify-content: center;
+        }
+        .container div, .container2 div{
+            border: solid 2px rgb(199, 199, 199);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+            background-color: #b3b3b3;
+            border-radius: 2px;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0px 0px 2px #000;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Hello</h2>
+            <p>This is a bunch of text inside a div</p>
+        </div>
+
+        <div>
+            <h2>Hello</h2>
+            <p>This is a bunch of text inside a div</p>
+        </div>
+    
+        <div>
+            <h2>Hello</h2>
+            <p>This is a bunch of text inside a div</p>
+        </div>
+        <div>
+            <h2>Hello</h2>
+            <p>This is a bunch of text inside a div</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div style="grid-area: 1/1/3/3; display: flex; justify-content: center; overflow: hidden;"> <img class="uno"></div> 
+        <div style="display: flex; justify-content: center; overflow: hidden;"> <img class="cuatro"></div> 
+        <div style="display: flex; justify-content: center; overflow: hidden;"><img class="seis"></div>
+        <div style="display: flex; justify-content: center; overflow: hidden;"><img class="cinco"></div> 
+        <div style="grid-area: 2/4/4/5;display: flex; justify-content: center; overflow: hidden;"> <img class="dos"></div> 
+        <div style="grid-column:1/4; display: flex; justify-content: center; overflow: hidden;"> <img class="tres"></div>
+        <!-- <div>giga awesome</div>
+        <div>mega awesome</div>
+        <div>sawesome</div> -->
+    </div>
+    
+    
+</body>
+    
+</html>

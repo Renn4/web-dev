@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="style" rel="stylesheet" href="stylesheets/stylesheet 5.css">
+    <title>Test</title>
+</head>
+<body st>
+
+    <div class="header">
+        
+        <button style="height: 100%;" onclick="changeStyle()"> Change style</button>
+
+        <div class="titlecontainer">
+            <h2 ID="titulo">Webpage Numero Cinco</h2>
+            <p style="opacity: 0.7;">this is a subtitle.</p>
+        </div> 
+
+    </div>
+
+    <div class="maincontainer">
+
+        <div class="container1">
+
+            <h2 class="columnTitle">left column<span> /////////////////////////////////////////</span></h2>
+            <hr>
+
+        </div>
+
+        <div class="container1">
+            
+            <h2 class="columnTitle" style="overflow: hidden;">Latin gibberish<span> ////////////////////////////////////////////////////////////////</span></h2>
+            <hr>
+            
+            <p>The following is an exploration of simple javascript scripts.</p>
+            <div class="container2">
+
+                <button onclick="changeText()"> &lt; change text &gt; </Change></button>
+
+                <span id="P1">
+                   This is text.
+                </span>
+
+            </div>
+            
+            <!-- <iframe src="HTML 3.html" frameborder="0" height="100%" width="100%" style="border-radius: 3px;"></iframe> -->
+        
+        </div>
+
+        <div class="container1">
+
+            <h2 class="columnTitle">right column<span> /////////////////////////////////////////</span></h2>
+            <hr>
+            <!-- <img src="https://media1.tenor.com/m/IVOOvhdE4UMAAAAC/matrix-skull.gif" alt="" style="width: 100%;"> -->
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script>
+        var bool1 = false;
+        function changeText(){
+            if (bool1 == false){
+                document.getElementById("P1").innerHTML = "This is the alternate text.";
+                bool1 = true;
+            }
+            else{
+                document.getElementById("P1").innerHTML = "This is text.";
+                bool1 = false;
+            }
+        }
+    </script>
+
+    <script>
+        function changeStyle(){
+        
+            var style = document.getElementById("style")
+            var link = style.getAttribute("href")
+            if (link === "stylesheets/stylesheet 5.css"){
+                style.setAttribute("href", "stylesheets/stylesheet 5 alt.css");
+            }
+            else{
+                style.setAttribute("href", "stylesheets/stylesheet 5.css");
+            }
+            
+        }
+    </script>
+</body>
+</html>
