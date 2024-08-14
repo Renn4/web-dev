@@ -8,7 +8,7 @@
 
     <div class="header">
         
-        <button style="height: 100%;" onclick="changeStyle()"> Change style</button>
+        <button onclick="changeStyle()"> <img id= "styleicon" src="https://i.imgur.com/lNEJqZr.png" alt=""></button>
 
         <div class="titlecontainer">
             <h2 ID="titulo">Webpage Numero Cinco</h2>
@@ -77,11 +77,15 @@
         
             var style = document.getElementById("style")
             var link = style.getAttribute("href")
+            var styleicon = document.getElementById("styleicon")
+            
             if (link === "stylesheets/stylesheet 5.css"){
                 style.setAttribute("href", "stylesheets/stylesheet 5 alt.css");
+                styleicon.src = "https://i.imgur.com/Bja8JZs.png"
             }
             else{
                 style.setAttribute("href", "stylesheets/stylesheet 5.css");
+                styleicon.src = "https://i.imgur.com/lNEJqZr.png"
             }
             
         }

@@ -1,5 +1,9 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: rgb(243, 86, 71) rgb(47, 13, 22);
+}
+
 body{
-    /* background-color: rgb(34, 3, 13); */
     background-image: linear-gradient(rgb(47, 13, 22), rgb(5, 11, 16));
     color: rgb(243, 86, 71);
     font-family: 'Courier New', Courier, monospace;
@@ -20,12 +24,15 @@ hr{
     margin-bottom: 10px;
     margin-top: 10px;
     justify-content: center;
+    align-items: center;
 }
 
 .header button{
-    left: 0;
+    left: 40px;
     position: absolute;
-    height: 100%;
+    width:40px;
+    height: 40px;
+    padding: 0px;
 }
 
 .titlecontainer{

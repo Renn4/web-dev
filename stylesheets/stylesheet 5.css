@@ -1,3 +1,8 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: rgb(0, 150, 20) rgb(16, 32, 23);
+}
+
 body{
     background-color: rgb(16, 32, 23);
     color: rgb(54, 255, 81);
@@ -19,12 +24,15 @@ hr{
     margin-bottom: 10px;
     margin-top: 10px;
     justify-content: center;
+    align-items: center;
 }
 
 .header button{
-    left: 0;
+    left: 40px;
     position: absolute;
-    height: 100%;
+    width:40px;
+    height: 40px;
+    padding: 0px;
 }
 
 .titlecontainer{
