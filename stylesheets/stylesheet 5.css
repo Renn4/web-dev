@@ -10,6 +10,7 @@ body{
     font-size: large;
     text-align: center;
     text-shadow: 1px 1px rgb(80, 0, 80);
+    height: 100vw;
 }
 
 hr{
@@ -27,12 +28,49 @@ hr{
     align-items: center;
 }
 
-.header button{
-    left: 40px;
-    position: absolute;
-    width:40px;
+.topbar{
+    display: flex;
+    background-color: rgb(9, 19, 17);
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.buttoncontainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid greenyellow; */
+}
+
+.buttoncontainer button{
+    width: 40px;
     height: 40px;
     padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid greenyellow; */
+}
+
+.navbar a{
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(54, 255, 81);
+}
+
+.navbar a:hover{
+    background-color: rgb(16, 32, 23);
 }
 
 .titlecontainer{
@@ -43,14 +81,16 @@ hr{
     margin: auto;
     display: grid;
     gap: 10px;
-    grid-template-columns: 23% 53% 23%;
+    grid-template-columns: 23% 53% 23%; 
+    grid-auto-flow: column;
+    justify-content: center;
 }
 
 .container1{
     text-align: left;
     background-color: rgb(9, 19, 17);
-    height: 823px;
     padding: 10px;
+    height: 5000px;
 }
 
 .container1:hover{
