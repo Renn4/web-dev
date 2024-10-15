@@ -61,10 +61,15 @@ body {
     text-shadow: 0px 0px 20px  rgba(255, 255, 255, 0.8);
 }
 
+.contenedor-de-grid{
+    width: 100vw;
+    overflow-x: auto;
+}
+
 .grid {
     width: 2150px;
     margin: 0 auto;
-  }
+}
 
 .grid::after {
 content: "";
@@ -78,6 +83,7 @@ width: 250px;
 height: 250px;
 overflow: hidden;
 float: left;
+transform: translate(0px, 0px);
 background: #BBB;
 border-radius: 50%;
 margin: 20px;
