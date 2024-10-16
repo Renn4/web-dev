@@ -5,10 +5,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <link rel="stylesheet" href="stylesheets/pagina musica mobile.css">
-
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    
     
     <script>
 
@@ -40,6 +40,15 @@
         window.onresize = onResize;
     </script>
 
+    <script>
+        window.onload = function() {
+            const scrollableElement = document.getElementById('scrollable');
+            const scrollHeight = scrollableElement.scrollHeight;
+            const scrollPosition = scrollHeight * 0.63; // 50% of the scrollable height
+            scrollableElement.scrollLeft = scrollPosition;
+        };
+    </script>
+
 </head>
 <body>
 
@@ -60,52 +69,55 @@
         <div class="subtitulo-2"> (Puedes seleccionar varios)</div>
     </div>
     
-    <div class="contenedor-de-grid">
+    <div class="contenedor-de-grid" id="scrollable">
     <div class="grid">
 
-        <div class="grid-item" style="background-color: #FF2196; box-shadow: 0px 2px 10px #FF2196;"> 
-            <div class="overlay"> Glam rock     </div>
+        <div class="grid-item magenta"> &nbsp;
+            <div class="overlay"> Glam rock </div>
         </div>
-        <div class="grid-item" style="background-color: #FFEC00; box-shadow: 0px 2px 10px #FFEC00;">&nbsp;
-            <div class="overlay" style="color: black;"> Nu metal     </div>
+        <div class="grid-item amarillo">&nbsp;
+            <div class="overlay" style="color: black;"> Nu metal </div>
         </div>
-        <div class="grid-item" style="background-color: #2FCBFF; box-shadow: 0px 2px 10px #2FCBFF;">&nbsp;
-            <div class="overlay"> Pop     </div>
+        <div class="grid-item cian">&nbsp;
+            <div class="overlay"> Pop </div>
         </div>
-        <div class="grid-item" style="background-color: #FFEC00; box-shadow: 0px 2px 10px #FFEC00;">&nbsp;
-            <div class="overlay" style="color: black;"> EDM     </div>
+        <div class="grid-item amarillo">&nbsp;
+            <div class="overlay" style="color: black;"> EDM </div>
         </div>
-        <div class="grid-item" style="background-color: #FF2196; box-shadow: 0px 2px 10px #FF2196;">&nbsp;
-            <div class="overlay"> Bachata     </div>
+        <div class="grid-item magenta">&nbsp;
+            <div class="overlay"> Bachata </div>
         </div>
-        <div class="grid-item" style="background-color: #FF2196; box-shadow: 0px 2px 10px #FF2196;">&nbsp;
-            <div class="overlay"> Reggae     </div>
+        <div class="grid-item magenta">&nbsp;
+            <div class="overlay"> Reggae </div>
         </div>
-        <div class="grid-item" style="background-color: #FFEC00; box-shadow: 0px 2px 10px #FFEC00;">&nbsp;
-            <div class="overlay" style="color: black;"> Cumbia     </div>
+        <div class="grid-item amarillo">&nbsp;
+            <div class="overlay" style="color: black;"> Cumbia </div>
         </div>
-        <div class="grid-item" style="background-color: #2FCBFF; box-shadow: 0px 2px 10px #2FCBFF;">&nbsp;
-            <div class="overlay"> Trap     </div>
+        <div class="grid-item cian">&nbsp;
+            <div class="overlay"> Trap </div>
         </div>
-        <div class="grid-item" style="background-color: #FFEC00; box-shadow: 0px 2px 10px #FFEC00;">&nbsp;
-            <div class="overlay" style="color: black;"> RKT        </div>
+        <div class="grid-item amarillo">&nbsp;
+            <div class="overlay" style="color: black;"> RKT </div>
         </div>
-        <div class="grid-item" style="background-color: #FFEC00; box-shadow: 0px 2px 10px #FFEC00;">&nbsp;
-            <div class="overlay" style="color: black;"> Funk     </div>
+        <div class="grid-item amarillo">&nbsp;
+            <div class="overlay" style="color: black;"> Funk </div>
         </div>
-        <div class="grid-item" style="background-color: #2FCBFF; box-shadow: 0px 2px 10px #2FCBFF;">&nbsp;
-            <div class="overlay"> Rap     </div>
+        <div class="grid-item cian">&nbsp;
+            <div class="overlay"> Rap </div>
         </div>
-        <div class="grid-item" style="background-color: #FF2196; box-shadow: 0px 2px 10px #FF2196;">&nbsp;
-            <div class="overlay"> Clásica     </div>
+        <div class="grid-item magenta">&nbsp;
+            <div class="overlay"> Clásica </div>
         </div>
-        <div class="grid-item" style="background-color: #2FCBFF; box-shadow: 0px 2px 10px #2FCBFF;">&nbsp;
-            <div class="overlay"> Jungle     </div>
+        <div class="grid-item cian">&nbsp;
+            <div class="overlay"> Jungle </div>
         </div>
-        <div class="grid-item" style="background-color: #FF2196; box-shadow: 0px 2px 10px #FF2196;">&nbsp;
-            <div class="overlay"> Jazz     </div>
+        <div class="grid-item magenta">&nbsp;
+            <div class="overlay"> Jazz </div>
         </div>
 
     </div>
     </div>
+
+    <div class="boton-siguiente"> Siguiente </div>
+
 </body>

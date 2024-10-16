@@ -37,7 +37,7 @@ body {
 .barra-header{
     width: 80%;
     margin-bottom: 5px;
-    margin-top:40px;
+    margin-top:20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -63,14 +63,14 @@ body {
 .subtitulo{
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
 }
 
 .subtitulo-2{
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     color: #847795;
 }
 
@@ -97,16 +97,43 @@ clear: both;
 
 .grid-item {
 position: relative; /* esto es para crear un texto de posicionamiento*/
-width: 170px;
-height: 170px;
+width: 160px;
+height: 160px;
 overflow: hidden;
 float: left;
 transform: translate(0px, 0px);
 background: #BBB;
 border-radius: 50%;
-margin: 20px;
-margin-top: -20px;
+margin: 10px;
+margin-top: -10px;
 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cian{
+    background-color: #2FCBFF; 
+    box-shadow: 0px 2px 10px #2FCBFF;
+}
+
+.magenta{
+    background-color: #FF2196;
+    box-shadow: 0px 2px 10px #FF2196;
+}
+
+.amarillo{
+    background-color: #FFEC00; 
+    box-shadow: 0px 2px 10px #FFEC00;
+}
+
+.boton-siguiente{
+    background-color: #36313D;
+    color: #847795;
+    box-shadow: 0px 4px 3px #2b2630 inset;
+    padding: 20px;
+    border-radius: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .overlay {
@@ -120,7 +147,7 @@ text-align: center;
 }
 
 .grid-item:nth-child(9n+6) {
-margin-left: 130px;
+margin-left: 100px;
 }
 
 .grid-item:nth-child(9n+10) {
@@ -135,8 +162,3 @@ clear:left;
   margin-top: 10px;
 }
 
-@media (max-width: 480px){
-    .grid-item{
-        transform: translate(-100px, 0px);
-    }
-}
