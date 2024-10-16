@@ -7,6 +7,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="stylesheets/pagina musica.css">
+    
+    <script>
+        
+        let isThrottled = false;    
+
+        function loadDocument() {
+            const width = window.innerWidth;
+            const isSmall = width < 1250; // Adjust this threshold as needed
+
+            // Load the appropriate HTML document
+            const targetDocument = isSmall ? 'pagina musica mobile.html' : 'pagina musica.html';
+            window.location.href = targetDocument;
+        }
+
+        function onResize() {
+        if (!isThrottled) {
+            isThrottled = true;
+
+            // Set a timeout to allow loading the document after 500ms
+            timeoutId = setTimeout(() => {
+                loadDocument();
+                isThrottled = false; // Reset throttling after loading
+                }, 500);
+            }
+        }
+
+        // Attach the resize event listener
+        window.onresize = loadDocument;
+        window.onresize = onResize;
+    </script>
 
 </head>
 <body>
