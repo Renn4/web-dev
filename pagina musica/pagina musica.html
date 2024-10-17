@@ -2,42 +2,22 @@
 <html lang="en">
 <head>
 
+    <!--importaciones-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
+    <!-- stylesheet -->
     <link rel="stylesheet" href="stylesheets/pagina musica.css">
+    <link rel="stylesheet" href="stylesheets/botones.css">
+    <link rel="stylesheet" href="stylesheets/imagenes.css">
     
-    <script>
-        
-        let isThrottled = false;    
+    <!-- scripts -->
+    
+    <script src="scripts/responsive.js"></script>
 
-        function loadDocument() {
-            const width = window.innerWidth;
-            const isSmall = width < 1250; // Adjust this threshold as needed
-
-            // Load the appropriate HTML document
-            const targetDocument = isSmall ? 'pagina musica mobile.html' : 'pagina musica.html';
-            window.location.href = targetDocument;
-        }
-
-        function onResize() {
-        if (!isThrottled) {
-            isThrottled = true;
-
-            // Set a timeout to allow loading the document after 500ms
-            timeoutId = setTimeout(() => {
-                loadDocument();
-                isThrottled = false; // Reset throttling after loading
-                }, 500);
-            }
-        }
-
-        // Attach the resize event listener
-        window.onresize = loadDocument;
-        window.onresize = onResize;
-    </script>
+    
 
 </head>
 <body>
@@ -66,7 +46,7 @@
             <div class="overlay"> Pop     </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> EDM     </div>
+            <div class="overlay"> EDM     </div>
         </div>
         <div class="grid-item magenta">&nbsp;
             <div class="overlay"> Bachata     </div>
@@ -75,16 +55,16 @@
             <div class="overlay"> Reggae     </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> Cumbia     </div>
+            <div class="overlay"> Cumbia     </div>
         </div>
         <div class="grid-item cian">&nbsp;
             <div class="overlay"> Trap     </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> RKT        </div>
+            <div class="overlay"> RKT        </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> Funk     </div>
+            <div class="overlay"> Funk     </div>
         </div>
         <div class="grid-item cian">&nbsp;
             <div class="overlay"> Rap     </div>
@@ -102,4 +82,7 @@
     </div>
 
     <div class="boton-siguiente"> Siguiente </div>
+
+    <script src="scripts/click.js"></script>
+
 </body>

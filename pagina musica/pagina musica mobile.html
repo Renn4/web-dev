@@ -2,61 +2,33 @@
 <html lang="en">
 <head>
 
+    <!--importaciones-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
+    <!-- stylesheet -->
     <link rel="stylesheet" href="stylesheets/pagina musica mobile.css">
+    <link rel="stylesheet" href="stylesheets/botones.css">
     
-    
-    <script>
+    <!-- scripts -->
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/scrolleo.js"> </script>
 
-        let isThrottled = false;    
-
-        function loadDocument() {
-            const width = window.innerWidth;
-            const isSmall = width < 1250; // Adjust this threshold as needed
-
-            // Load the appropriate HTML document
-            const targetDocument = isSmall ? 'pagina musica mobile.html' : 'pagina musica.html';
-            window.location.href = targetDocument;
-        }
-
-        function onResize() {
-        if (!isThrottled) {
-            isThrottled = true;
-
-            // Set a timeout to allow loading the document after 500ms
-            timeoutId = setTimeout(() => {
-                loadDocument();
-                isThrottled = false; // Reset throttling after loading
-                }, 500);
-            }
-        }
-        
-        // Attach the resize event listener
-        window.onresize = loadDocument;
-        window.onresize = onResize;
-    </script>
-
-    <script>
-        window.onload = function() {
-            const scrollableElement = document.getElementById('scrollable');
-            const scrollHeight = scrollableElement.scrollHeight;
-            const scrollPosition = scrollHeight * 0.63; // 50% of the scrollable height
-            scrollableElement.scrollLeft = scrollPosition;
-        };
-    </script>
+    <style>
+        .overlay{font-size: 20px;}
+        .boton-siguiente{margin-top: 15px;}
+    </style>
 
 </head>
 <body>
 
     <div class="contenedor-iconos">
-        <div class="icono icono-izquierda">
+        <div class="icono-izquierda">
             <i class="fi fi-rr-interrogation icono-estilo"></i>
         </div>
-        <div class="icono icono-derecha">
+        <div class="icono-derecha">
             <i class="fi fi-rr-menu-burger icono-estilo"></i>
         </div>
     </div>
@@ -76,13 +48,13 @@
             <div class="overlay"> Glam rock </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> Nu metal </div>
+            <div class="overlay"> Nu metal </div>
         </div>
         <div class="grid-item cian">&nbsp;
             <div class="overlay"> Pop </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> EDM </div>
+            <div class="overlay"> EDM </div>
         </div>
         <div class="grid-item magenta">&nbsp;
             <div class="overlay"> Bachata </div>
@@ -91,16 +63,16 @@
             <div class="overlay"> Reggae </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> Cumbia </div>
+            <div class="overlay"> Cumbia </div>
         </div>
         <div class="grid-item cian">&nbsp;
             <div class="overlay"> Trap </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> RKT </div>
+            <div class="overlay"> RKT </div>
         </div>
         <div class="grid-item amarillo">&nbsp;
-            <div class="overlay" style="color: black;"> Funk </div>
+            <div class="overlay"> Funk </div>
         </div>
         <div class="grid-item cian">&nbsp;
             <div class="overlay"> Rap </div>
@@ -119,5 +91,7 @@
     </div>
 
     <div class="boton-siguiente"> Siguiente </div>
+
+    <script src="scripts/click.js"></script>
 
 </body>
